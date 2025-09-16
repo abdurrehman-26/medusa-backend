@@ -29,6 +29,13 @@ module.exports = defineConfig({
               apiKey: process.env.STRIPE_API_KEY,
             },
           },
+          {
+            resolve: "./src/modules/custom-stripe",
+            id: "custom",
+            options: {
+              apiKey: process.env.STRIPE_API_KEY,
+            },
+          },
         ],
       },
     },
